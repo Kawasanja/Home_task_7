@@ -29,6 +29,8 @@ public:
 	{
 		size = b.size;
 		p = new int [size];
+		for(int i=0; i<7; i++){
+		p[i] = b.p[i];}
 	}
 	
 };
@@ -41,15 +43,13 @@ int main()
 		m.set(i,i+1);
 	}
 	for(int i=0; i<7; i++){
-		cout << m.get(i) << endl;
+		cout << m.get(i) << ' ';
 	}
 	cout << endl;
 	Array n(m);
 	
+	
 	for(int i=0; i<7; i++){
-		n.set(i,i+1);
-	}
-	for(int i=0; i<7; i++){
-		cout << n.get(i) << endl;
+		cout << n.get(i) << ' ';
 	}
 }
